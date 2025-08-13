@@ -1,0 +1,183 @@
+/* Estilo global */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto; /* Permitir el desplazamiento de la página */
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px; /* Añadir un poco de margen en la parte superior */
+}
+
+/* Título del formulario */
+h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2C3E50;
+    text-align: center;
+}
+
+/* Estilo de las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 2px solid black; /* Borde negro para la tabla */
+}
+
+/* Estilo de las celdas */
+th, td {
+    padding: 3px;
+    text-align: center;
+    font-size: 1rem;
+    color: #34495E;
+    border-bottom: 2px solid #BDC3C7;
+    border: 1px solid black;
+}
+
+/* Cabecera de la tabla */
+th {
+    background-color: #1C2F55;
+    color: white;
+}
+
+/* Filas de la tabla */
+td {
+    background-color: #ffffffeb;
+}
+
+/* Estilo de los campos de texto dentro de las celdas */
+td input[type="text"], td input[type="datetime-local"], td input[type="radio"] {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+td input[type="text"]:focus, td input[type="datetime-local"]:focus {
+    border-color: #3498DB;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Botón de guardar */
+button {
+    background-color: #3498DB;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+button:active {
+    background-color: #1F618D;
+}
+
+/* Estilo para las secciones */
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2C3E50;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Estilo de las celdas con imágenes */
+td img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #BDC3C7;
+    margin: 10px 0;
+}
+
+/* Estilo para las celdas de texto grandes */
+strong {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+p {
+    margin: 0;
+}
+
+/* Estilo de los campos con placeholder */
+input::placeholder {
+    color: #BDC3C7;
+    font-style: italic;
+}
+
+/* Estilo en móviles */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    td input[type="text"], td input[type="datetime-local"] {
+        width: 100%;
+    }
+}
+.timer {
+    position: fixed;
+    top: 68px;
+    right: 20px;
+    font-size: 1.5em;
+    background-color: #e55368;
+    padding: 6px;
+    border-radius: 5px;
+    color: #f4f4f4;
+}
+.turno {
+    font-weight: bold;
+}
